@@ -35,17 +35,8 @@ public class FruitEntityResource {
 
     private static final Logger LOGGER = Logger.getLogger(FruitEntityResource.class.getName());
 
-    private final EntityService entityService;
-
-    @Inject
-    public FruitEntityResource(EntityService entityService){this.entityService=entityService;}
-
-    @GET
-    @Path("a")
-    public List<FruitEntity> myGet(){
-        return entityService.entityList();
-    }
-
+    
+    
 
     @GET
     public List<FruitEntity> get() {
